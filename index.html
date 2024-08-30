@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Content/bootstrap-4.6.0-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel='stylesheet'
+        href='https://cdnjs.cloudflare.com/ajax/libs/jquery.perfect-scrollbar/1.5.0/css/perfect-scrollbar.min.css'>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" rel="stylesheet" />
+    <link href="~/Content/font-awesome-5.0.10/css/fontawesome-all.min.css" rel="stylesheet" />
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="preloader" id="PreLoader">
+        <div class="spinner-border text-primary"></div>
+    </div>
+    <header class="d-flex align-items-center">
+        <div class="container-fluid">
+            <div id="wrapper" class="d-flex align-items-center justify-content-between w-100">
+                <div class="db-toggle">
+                    <a href="javascript:;"><img src="/assets/images/menubar.svg" /></a>
+                </div>
+
+                <div>
+                    <a href="javascript:;" class="logotxt">LOGO</a>
+                </div>
+
+                <div class="d-flex align-items-center">
+                    <div>
+                        <button type="button" class="btn btn-info btn-circle" data-toggle="collapse"
+                            href="#collapseExample" role="button" aria-expanded="false"
+                            aria-controls="collapseExample">VA</button>
+                        <div class="card shadow p-3 mb-5 bg-white rounded collapse user-box" id="collapseExample"
+                            style="width: 18rem;">
+                            <div class="card-body">
+                                <div class="row mb-4">
+                                    <div class="col-2">
+                                        <span class="btn btn-info btn-circle" style="margin-top: 6px;">VA</span>
+                                    </div>
+                                    <div class="col-10">
+                                        <h5 class="card-title">Vishal Agnihotri</h5>
+                                        <h6 class="card-subtitle mb-2 text-muted" style="font-size:12px;">
+                                            vishal10blog@gmail.com</h6>
+                                    </div>
+                                </div>
+                                <p class="card-text text-muted">Your Account has 2 GB storage.</p>
+                                <a href="#" onclick="SignOut()" class="card-link">Sign Out</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="sidenav">
+        <div class="nav_content">
+            <a href="index.html" class="d-flex align-items-center active">
+                <i class="show">
+                    <img src="/assets/images/home.png" alt="icon" />
+                </i>
+                <i class="hidden">
+                    <img src="/assets/images/home.png" alt="icon" />
+                </i>
+                <span>Dashboard</span>
+            </a>
+
+            <a id="load-user" class="d-flex align-items-center">
+                <i class="show">
+                    <img src="/assets/images/user.png" alt="icon" />
+                </i>
+                <i class="hidden">
+                    <img src="/assets/images/user.png" alt="icon" />
+                </i>
+                <span>User</span>
+            </a>
+
+            <a id="load-file-manager" class="d-flex align-items-center">
+                <i class="show">
+                    <img src="/assets/images/folder-management.png" alt="icon" />
+                </i>
+                <i class="hidden">
+                    <img src="/assets/images/folder-management.png" alt="icon" />
+                </i>
+                <span>File Manager</span>
+            </a>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="container-fluid body-content">
+            <div id="content-container">
+                <!-- Content will be loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <footer class="page-footer font-small blue footer-cloud">
+        <div class="footer-copyright text-center py-3">
+            <a href="https://mdbootstrap.com/education/bootstrap/"> CAPEBERA.COM COPYRIGHT © 2021 ALL RIGHTS
+                RESERVED</a>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript"
+        src="https://ajax.aspnetcdn.com/ajax/jquery.templates/beta1/jquery.tmpl.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery.perfect-scrollbar/1.5.0/perfect-scrollbar.min.js"></script>
+    <script src="index.js"></script>
+    <script src="common.js"></script>
+
+</body>
+
+</html>
